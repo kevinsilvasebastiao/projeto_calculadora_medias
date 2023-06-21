@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculdora de Medias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <!--cabeçalho da pagina com img da logo h1-->
+    <header>
+        <img src="./images/logo.png" alt="capelo e dioma">
+        <h1>Calculadora de Médias</h1>
+    </header>
+    <!--formulario da pagina com os inputes do tipo texto numerico e botao todos os inputes sao obrigatorios e o botao do tipo submit-->
+    <form id="form-atividade">
+        <input type="text" id="nome-atividade" required placeholder="Nome da Atividade">
+        <input type="number" id="nota-atividade" required placeholder="Nota de Atividade" min="0" max="10">
+        <button type="submit">Adicionar +</button>
+    </form>
+    <!--tbela para fazer a media das notas do aluno o cellspacing para tirar o espaçamento entre as tabelas-->
+    <table cellspacing="0">
+        <!--cabeça de tabel com o tr e depois os th com seus conteudos-->
+        <thead>
+            <tr>
+                <th>
+                    Nome da Atividade
+                </th>
+                <th>
+                    Nota de Atividade
+                </th>
+                <th>
+                    Aprovado?
+                </th>
+            </tr>
+        </thead>
+        <!--corpo da tabela-->
+        <tbody>
+            <!--tabela tr em si com seu td e seus conteudos e img de aprovado
+            <tr>
+                <td>Atividade 1</td>
+                <td>7</td>
+                <td><img src="./images/aprovado.png" alt="Emoje festejando"></td>
+            </tr>-->
+        </tbody>
+        <!--tabela de rodape-->
+        <tfoot>
+            <!--tr com media final e msg de aprovado-->
+            <tr>
+                <td>Média Final</td>
+                <td id="media-final-valor">---</td>
+                <!--clase resultado feita para estilizção no css do aprovado-->
+                <td id="media-fical-resultado">---</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
