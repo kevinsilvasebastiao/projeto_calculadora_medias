@@ -72,7 +72,7 @@ function atualizaMediaFinal(){
     //constante media final recebe a função calCulaMediaFinal
     const mediaFinal = calCulaMediaFinal();
     //chamando os elemento por id media fical valor e resultado do html
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
     /*media final resultado recebe um elementohtml e variavel media final
     e fazendo o teste se media final for maior ou igual a 7 aprovado se nao reprovado restornando as constantes span*/
     //aqui o cliente vai digitar a nota minima que precisa para fazer todo o resto do codigo 
